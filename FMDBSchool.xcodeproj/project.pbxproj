@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC22CE077BFAE9F438D0B179 /* Pods_FMDBSchool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02ACF5F914C41E329EBB5DE3 /* Pods_FMDBSchool.framework */; };
+		EF6007C12B23215800052C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6007C02B23215800052C6A /* AppDelegate.swift */; };
+		EF6007C32B23215800052C6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6007C22B23215800052C6A /* SceneDelegate.swift */; };
+		EF6007C52B23215800052C6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6007C42B23215800052C6A /* ViewController.swift */; };
+		EF6007C82B23215800052C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6007C62B23215800052C6A /* Main.storyboard */; };
+		EF6007CA2B23215900052C6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6007C92B23215900052C6A /* Assets.xcassets */; };
+		EF6007CD2B23215900052C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6007CB2B23215900052C6A /* LaunchScreen.storyboard */; };
+		EF6007D82B23297900052C6A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6007D72B23297900052C6A /* Util.swift */; };
+		EF6007DA2B232E9300052C6A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6007D92B232E9300052C6A /* DatabaseManager.swift */; };
+		EF628CD42B26D2DD000ABA9B /* School.db in Resources */ = {isa = PBXBuildFile; fileRef = EF628CD32B26D2DD000ABA9B /* School.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02ACF5F914C41E329EBB5DE3 /* Pods_FMDBSchool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMDBSchool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		439FB502CF8D16A6982E5D7A /* Pods-FMDBSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBSchool.release.xcconfig"; path = "Target Support Files/Pods-FMDBSchool/Pods-FMDBSchool.release.xcconfig"; sourceTree = "<group>"; };
+		C5261A3CCE3A32B464688E5E /* Pods-FMDBSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBSchool.debug.xcconfig"; path = "Target Support Files/Pods-FMDBSchool/Pods-FMDBSchool.debug.xcconfig"; sourceTree = "<group>"; };
+		EF6007BD2B23215800052C6A /* FMDBSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6007C02B23215800052C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF6007C22B23215800052C6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF6007C42B23215800052C6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF6007C72B23215800052C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF6007C92B23215900052C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF6007CC2B23215900052C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF6007CE2B23215900052C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6007D72B23297900052C6A /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		EF6007D92B232E9300052C6A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		EF628CD32B26D2DD000ABA9B /* School.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = School.db; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF6007BA2B23215800052C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC22CE077BFAE9F438D0B179 /* Pods_FMDBSchool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3C71DAB723AFB2C44F2B695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02ACF5F914C41E329EBB5DE3 /* Pods_FMDBSchool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D98BC5E46E3A3710C5CF50EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5261A3CCE3A32B464688E5E /* Pods-FMDBSchool.debug.xcconfig */,
+				439FB502CF8D16A6982E5D7A /* Pods-FMDBSchool.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF6007B42B23215800052C6A = {
+			isa = PBXGroup;
+			children = (
+				EF6007BF2B23215800052C6A /* FMDBSchool */,
+				EF6007BE2B23215800052C6A /* Products */,
+				D98BC5E46E3A3710C5CF50EA /* Pods */,
+				C3C71DAB723AFB2C44F2B695 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6007BE2B23215800052C6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6007BD2B23215800052C6A /* FMDBSchool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6007BF2B23215800052C6A /* FMDBSchool */ = {
+			isa = PBXGroup;
+			children = (
+				EF6007D62B23296300052C6A /* Database */,
+				EF6007C02B23215800052C6A /* AppDelegate.swift */,
+				EF6007D72B23297900052C6A /* Util.swift */,
+				EF6007D92B232E9300052C6A /* DatabaseManager.swift */,
+				EF6007C22B23215800052C6A /* SceneDelegate.swift */,
+				EF6007C42B23215800052C6A /* ViewController.swift */,
+				EF6007C62B23215800052C6A /* Main.storyboard */,
+				EF6007C92B23215900052C6A /* Assets.xcassets */,
+				EF6007CB2B23215900052C6A /* LaunchScreen.storyboard */,
+				EF6007CE2B23215900052C6A /* Info.plist */,
+			);
+			path = FMDBSchool;
+			sourceTree = "<group>";
+		};
+		EF6007D62B23296300052C6A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				EF628CD32B26D2DD000ABA9B /* School.db */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF6007BC2B23215800052C6A /* FMDBSchool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6007D12B23215900052C6A /* Build configuration list for PBXNativeTarget "FMDBSchool" */;
+			buildPhases = (
+				D17D7F20093AFC50FC1A8B1B /* [CP] Check Pods Manifest.lock */,
+				EF6007B92B23215800052C6A /* Sources */,
+				EF6007BA2B23215800052C6A /* Frameworks */,
+				EF6007BB2B23215800052C6A /* Resources */,
+				A82423230170700CFF9396B7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDBSchool;
+			productName = FMDBSchool;
+			productReference = EF6007BD2B23215800052C6A /* FMDBSchool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF6007B52B23215800052C6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EF6007BC2B23215800052C6A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EF6007B82B23215800052C6A /* Build configuration list for PBXProject "FMDBSchool" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF6007B42B23215800052C6A;
+			productRefGroup = EF6007BE2B23215800052C6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF6007BC2B23215800052C6A /* FMDBSchool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF6007BB2B23215800052C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6007CD2B23215900052C6A /* LaunchScreen.storyboard in Resources */,
+				EF628CD42B26D2DD000ABA9B /* School.db in Resources */,
+				EF6007CA2B23215900052C6A /* Assets.xcassets in Resources */,
+				EF6007C82B23215800052C6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A82423230170700CFF9396B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FMDBSchool/Pods-FMDBSchool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FMDBSchool/Pods-FMDBSchool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FMDBSchool/Pods-FMDBSchool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D17D7F20093AFC50FC1A8B1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMDBSchool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF6007B92B23215800052C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6007C52B23215800052C6A /* ViewController.swift in Sources */,
+				EF6007C12B23215800052C6A /* AppDelegate.swift in Sources */,
+				EF6007DA2B232E9300052C6A /* DatabaseManager.swift in Sources */,
+				EF6007C32B23215800052C6A /* SceneDelegate.swift in Sources */,
+				EF6007D82B23297900052C6A /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF6007C62B23215800052C6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6007C72B23215800052C6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF6007CB2B23215900052C6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6007CC2B23215900052C6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF6007CF2B23215900052C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF6007D02B23215900052C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF6007D22B23215900052C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5261A3CCE3A32B464688E5E /* Pods-FMDBSchool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4DDR234XH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FMDBSchool/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = creliohealth.FMDBSchool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF6007D32B23215900052C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439FB502CF8D16A6982E5D7A /* Pods-FMDBSchool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4DDR234XH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FMDBSchool/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = creliohealth.FMDBSchool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF6007B82B23215800052C6A /* Build configuration list for PBXProject "FMDBSchool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6007CF2B23215900052C6A /* Debug */,
+				EF6007D02B23215900052C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6007D12B23215900052C6A /* Build configuration list for PBXNativeTarget "FMDBSchool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6007D22B23215900052C6A /* Debug */,
+				EF6007D32B23215900052C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF6007B52B23215800052C6A /* Project object */;
+}
